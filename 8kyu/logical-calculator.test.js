@@ -5,18 +5,13 @@
  * @returns
  */
 function logicalCalc(array, op) {
-  return array
-    .slice(1)
-    .reduce(
-      (acc, curr) =>
-        (acc = { AND: acc && curr, OR: acc || curr, XOR: acc ? !curr : curr }[
-          op
-        ]),
-      array[0]
-    );
+  return array.reduce(
+    (acc, curr) =>
+      (acc = { AND: acc && curr, OR: acc || curr, XOR: acc ? !curr : curr }[op])
+  );
 }
 
-it("Fixed Tests", function() {
+it("Fixed Tests", function () {
   expect(logicalCalc([true, true, true, false], "AND")).toBe(false);
   expect(logicalCalc([true, true, true, false], "OR")).toBe(true);
   expect(logicalCalc([true, true, true, false], "XOR")).toBe(true);
