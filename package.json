@@ -17,6 +17,7 @@
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-typescript": "^7.13.0",
+    "@codewars/test-compat": "^1.1.0",
     "@types/jest": "^26.0.23",
     "babel-jest": "^27.0.1",
     "chai": "^4.3.4",
