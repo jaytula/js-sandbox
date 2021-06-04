@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
     "nodemon": "^2.0.7"
   },
   "devDependencies": {
@@ -17,6 +19,8 @@
     "@babel/preset-typescript": "^7.13.0",
     "@types/jest": "^26.0.23",
     "babel-jest": "^27.0.1",
-    "jest": "^27.0.1"
+    "chai": "^4.3.4",
+    "jest": "^27.0.1",
+    "mocha": "^8.4.0"
   }
 }
