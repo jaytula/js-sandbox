@@ -1,3 +1,6 @@
+// Problem from: https://www.codewars.com/kata/56a1c63f3bc6827e13000006/train/javascript
+// run with `npm run mocha -- ./test/how-many-smaller-2.test.js --watch`
+
 /**
  *
  * @param {number[]} arr
@@ -10,7 +13,9 @@ function smaller(arr) {
 
 const Test = require("@codewars/test-compat");
 
-const MAX = 10000;
+// Problem. If MAX >= 30000, it takes too long. Need to be able to handle arrays
+// of up to 100K to pass CodeWars.
+const MAX = 30000;
 
 describe("Initial Tests", () => {
   it("test", () => {
