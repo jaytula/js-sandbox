@@ -5,29 +5,35 @@
  * @returns 
  */
 function check(n, m) {
-  // if(n === 1 && m === 1) return false;
-  let count = 0;
+  if(m > n) {
+    const temp = n
+    n = m;
+    m = temp;
+  }
+  if(n <= 3) return false;
+  if(m >= 5) return true;
+
+  const inBounds = (x1, y1, visited) => {
+    return x1 >= 0 && y1 >= 0 && x1 < n && y1 < m && !visited.includes(`${x1},${y1}`)
+  }
 
   function tour(x, y, visited=[]) {
-    count++;
-    console.log({x, y, visited});
-    if(count > 2) return;
-    if(x < 0 || x > n-1 || y < 0 || y > m-1) return false;
     const position = `${x},${y}`;
     if(visited.includes(position)) return false;
 
     const updatedVisited = visited.concat(position);
-    if(visited.length === n*m) return true;
+    if(updatedVisited.length === n*m) return true;
 
-    return tour(x+1, y+2, updatedVisited)
-      || tour(x+1, y-2, updatedVisited)
-      || tour(x+2, y+1, updatedVisited)
-      || tour(x+2, y-1, updatedVisited)
-      || tour(x-1, y+2, updatedVisited)
-      || tour(x-1, y-2, updatedVisited)
-      || tour(x-2, y+1, updatedVisited)
-      || tour(x-2, y-1, updatedVisited);
+    return (inBounds(x+1, y+2, updatedVisited) && tour(x+1, y+2, updatedVisited))
+      || (inBounds(x+1, y-2, updatedVisited) && tour(x+1, y-2, updatedVisited))
+      || (inBounds(x+2, y+1, updatedVisited) && tour(x+2, y+1, updatedVisited))
+      || (inBounds(x+2, y-1, updatedVisited) && tour(x+2, y-1, updatedVisited))
+      || (inBounds(x-1, y+2, updatedVisited) && tour(x-1, y+2, updatedVisited))
+      || (inBounds(x-1, y-2, updatedVisited) && tour(x-1, y-2, updatedVisited))
+      || (inBounds(x-2, y+1, updatedVisited) && tour(x-2, y+1, updatedVisited))
+      || (inBounds(x-2, y-1, updatedVisited) && tour(x-2, y-1, updatedVisited));
   }
+
   return tour(0, 0, []);
 }
 
@@ -48,7 +54,7 @@ it(`should check (3 x 3) desk size`, () => {
 it(`should check (4 x 4) desk size`, () => {
   assert.deepEqual(check(4, 4), false)
 });
-it.only(`should check (5 x 5) desk size`, () => {
+it(`should check (5 x 5) desk size`, () => {
   assert.deepEqual(check(5, 5), true)
 });
 it(`should check (6 x 6) desk size`, () => {
