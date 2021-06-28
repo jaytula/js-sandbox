@@ -1,16 +1,20 @@
+/**
+ * 
+ * @param {number} n 
+ * @returns 
+ */
 function numOfOpenLockers(n) {
   if (n <= 1) return n;
-
-  const lockers = new Array(n).fill(true);
-
+  let total = 1;
   for (let i = 2; i <= n; i++) {
-    for (let j = i; j <= n; j += i) {
-      const idx = j - 1;
-      lockers[idx] = !lockers[idx];
+    let open = false;
+    for (let j = i; j <= Math.sqrt(n); j += i) {
+      if(i % j === 0) open = !open;
     }
+    total += +open;
   }
 
-  return lockers.reduce((acc, curr) => acc + (curr ? 1 : 0), 0);
+  return total;
 }
 
 const Test = require("@codewars/test-compat");
