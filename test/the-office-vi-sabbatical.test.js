@@ -13,7 +13,7 @@ function sabb(s, val, happiness) {
 const Test = require("@codewars/test-compat");
 
 describe("Example tests", () => {
-  test("test", () => {
+  it("test", () => {
     Test.assertEquals(
       sabb("Can I have a sabbatical?", 5, 5),
       "Sabbatical! Boom!"

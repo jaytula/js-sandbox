@@ -17,7 +17,7 @@ function pyramid(balls) {
 
 const { assert } = require("chai");
 
-describe("Basic tests", function () {
+describe("Billiards triangle", function () {
   it("Testing for balls: 1", function () {
     assert.strictEqual(pyramid(1), 1);
   });

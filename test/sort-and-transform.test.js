@@ -30,7 +30,7 @@ function sortTransform(arr) {
 const Test = require("@codewars/test-compat");
 
 describe("Example tests", () => {
-  test("test", () => {
+  it("test", () => {
     Test.assertDeepEquals(
       sortTransform([121, 122, 123, 124, 125, 120, 122, 132]),
       "yzz-xy}-}yx-xy}"

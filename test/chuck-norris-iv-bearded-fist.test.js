@@ -11,7 +11,7 @@ function fistBeard(arr) {
 
 const Test = require("@codewars/test-compat");
 
-test("Example tests", () => {
+it("Example tests", () => {
   Test.assertEquals(
     fistBeard([[78], [117, 110, 99], [104, 117], [107, 115]]),
     "Nunchuks"

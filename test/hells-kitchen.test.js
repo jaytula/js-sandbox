@@ -15,7 +15,7 @@ function gordon(s) {
 const Test = require("@codewars/test-compat");
 
 describe("Example tests", () => {
-  test("test", () => {
+  it("test", () => {
     Test.assertEquals(
       gordon("What feck damn cake"),
       "WH@T!!!! F*CK!!!! D@MN!!!! C@K*!!!!"

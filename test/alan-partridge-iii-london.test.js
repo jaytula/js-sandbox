@@ -15,7 +15,7 @@ function alan(arr) {
 
 const Test = require("@codewars/test-compat");
 
-test("Example tests", () => {
+it("Example tests", () => {
   Test.assertEquals(
     alan([
       "Norwich",

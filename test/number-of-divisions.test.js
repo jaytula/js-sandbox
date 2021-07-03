@@ -18,7 +18,7 @@ const divisions = (n, divisor) => {
 const Test = require("@codewars/test-compat");
 
 describe("Your solution", function () {
-  test("should work for example tests", function () {
+  it("should work for example tests", function () {
     Test.assertEquals(divisions(6, 2), 2);
     Test.assertEquals(divisions(100, 2), 6);
     Test.assertEquals(divisions(2450, 5), 4);

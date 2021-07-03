@@ -9,7 +9,7 @@ function quadratic(x1, x2) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Solution", function () {
+describe("Coefficients of the Quadratic Equation", function () {
   it("should test for something", function () {
     Test.assertDeepEquals(quadratic(0, 1), [1, -1, 0]);
     Test.assertDeepEquals(quadratic(1, 1), [1, -2, 1]);

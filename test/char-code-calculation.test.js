@@ -14,8 +14,8 @@ function calc(s) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Example tests", () => {
-  test("test", () => {
+describe("Char Code Calculation", () => {
+  it("test", () => {
     Test.assertEquals(calc("ABC"), 6);
     Test.assertEquals(calc("abcdef"), 6);
     Test.assertEquals(calc("ifkhchlhfd"), 6);

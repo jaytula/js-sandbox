@@ -25,7 +25,7 @@ const assert = chai.assert;
 
 let mountMoose = new Song('Mount Moose', 'The Snazzy Moose');
 
-describe('Example Tests', function() {
+describe('What a "Classy" Song', function() {
   it('Test for title and artist', function() {
     assert.strictEqual(mountMoose.title, 'Mount Moose');
     assert.strictEqual(mountMoose.artist, 'The Snazzy Moose');

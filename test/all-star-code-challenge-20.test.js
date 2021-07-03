@@ -13,7 +13,7 @@ function addArrays(array1, array2) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Tests", () => {
+describe("All Star Code Challenge #20", () => {
   it("test", () => {
     Test.assertDeepEquals(addArrays([1, 2], [4, 5]), [5, 7]);
     Test.expectError(

@@ -16,8 +16,8 @@ function present(x, y) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Example tests", () => {
-  test("test", () => {
+describe("Birthday II - Presents", () => {
+  it("test", () => {
     Test.assertEquals(present("badpresent", 3), "Take this back!");
     Test.assertEquals(present("goodpresent", 9), "pxxmy{n|nw}");
     Test.assertEquals(present("crap", 10), "acpr");

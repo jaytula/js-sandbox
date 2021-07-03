@@ -14,7 +14,7 @@ function alternateCase(s) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Tests", () => {
+describe("Alternate case", () => {
   it("test", () => {
     Test.assertEquals(alternateCase("abc"), "ABC");
     Test.assertEquals(alternateCase("ABC"), "abc");

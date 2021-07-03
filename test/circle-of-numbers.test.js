@@ -4,7 +4,7 @@ function circleOfNumbers(n, firstNumber) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Basic Tests", function () {
+describe("Simple Fun #2: Circle of Numbers", function () {
   it("It should works for basic tests.", function () {
     Test.assertEquals(circleOfNumbers(10, 2), 7);
 

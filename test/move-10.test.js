@@ -16,7 +16,7 @@ function moveTen(s) {
 
 const Test = require("@codewars/test-compat");
 
-test("Example tests", () => {
+it("Example tests", () => {
   Test.assertDeepEquals(moveTen("testcase"), "docdmkco");
   Test.assertDeepEquals(moveTen("codewars"), "mynogkbc");
   Test.assertDeepEquals(moveTen("exampletesthere"), "ohkwzvodocdrobo");

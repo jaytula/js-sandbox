@@ -23,7 +23,7 @@ class God {
 
 const Test = require("@codewars/test-compat");
 
-describe("GodTest", function () {
+describe("Basic subclasses - Adam and Eve", function () {
   it("Adam should be a Man", function () {
     let humans = God.create();
     Test.assertEquals(

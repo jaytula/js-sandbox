@@ -16,7 +16,7 @@ function applesDistribution(apples, boxCapacity, maxResidue) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Basic Tests", function () {
+describe("Simple Fun #251: Apples Distribution", function () {
   it("It should works for basic tests.", function () {
     Test.assertEquals(applesDistribution(7, 4, 1), 3);
 

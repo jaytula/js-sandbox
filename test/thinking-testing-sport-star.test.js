@@ -17,7 +17,7 @@ function testit(act, s) {
 
 const Test = require("@codewars/test-compat");
 
-test("test", () => {
+it("test", () => {
   Test.assertDeepEquals(
     testit(["run", "jump", "run", "jump", "run"], "_|_|_"),
     "_|_|_",

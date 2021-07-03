@@ -15,7 +15,7 @@ function shortestDistance(a, b, c) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Tests", () => {
+describe("Bugs Life", () => {
   it("test", () => {
     Test.assertApproxEquals(shortestDistance(1, 2, 3), 4.242640687119285);
     Test.assertApproxEquals(shortestDistance(1, 1, 1), 2.23606797749979);

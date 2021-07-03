@@ -16,7 +16,7 @@ function isNarcissistic(n) {
 const Test = require("@codewars/test-compat");
 
 describe("Basic tests", () => {
-  test("test", () => {
+  it("test", () => {
     Test.assertEquals(isNarcissistic(153), true);
     Test.assertEquals(isNarcissistic(1), true);
     Test.assertEquals(isNarcissistic(435), false);

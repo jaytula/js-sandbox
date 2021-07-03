@@ -12,7 +12,7 @@ function trim(arr) {
 
 const Test = require("@codewars/test-compat");
 
-test("Example tests", () => {
+it("Example tests", () => {
   Test.assertDeepEquals(
     trim([
       ["J", "|"],

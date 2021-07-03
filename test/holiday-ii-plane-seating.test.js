@@ -22,7 +22,7 @@ function planeSeat(s) {
 
 const Test = require("@codewars/test-compat");
 
-test("Example tests", () => {
+it("Example tests", () => {
   Test.assertEquals(planeSeat("2B"), "Front-Left");
   Test.assertEquals(planeSeat("20B"), "Front-Left");
   Test.assertEquals(planeSeat("58I"), "No Seat!!");

@@ -16,7 +16,7 @@ function cake(totalCandles, s) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Example tests", () => {
+describe("Birthday I - Cake", () => {
   it("test", () => {
     Test.assertEquals(cake(900, "abcdef"), "That was close!");
     Test.assertEquals(cake(56, "ifkhchlhfd"), "Fire!");

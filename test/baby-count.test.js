@@ -9,7 +9,7 @@ function countName(anArr, name) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Tests", () => {
+describe("ScholarStem: Unit 6- Baby count!", () => {
   it("test", () => {
     const MAINLIST = [
       "Bob",

@@ -6,7 +6,7 @@ String.prototype.toAlternatingCase = function () {
 
 const Test = require("@codewars/test-compat");
 
-describe("String.prototype.toAlternatingCase", () => {
+describe("altERnaTIng cAsE <=> ALTerNAtiNG CaSe", () => {
   it("should work for fixed tests (provided in the description)", () => {
     Test.assertEquals("hello world".toAlternatingCase(), "HELLO WORLD");
     Test.assertEquals("HELLO WORLD".toAlternatingCase(), "hello world");

@@ -11,7 +11,7 @@ function guessHatColor(a, b, c, d) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Basic Tests", function () {
+describe("Guess Hat Color", function () {
   it("It should works for basic tests.", function () {
     Test.assertEquals(guessHatColor("black", "white", "black", "white"), 2);
 

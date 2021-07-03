@@ -11,7 +11,7 @@ function chuckPushUps(s) {
 
 const Test = require("@codewars/test-compat");
 
-test("Example tests", () => {
+it("Example tests", () => {
   Test.assertEquals(
     chuckPushUps(
       '1 "Chuck" 10 "Stop that!" 11 "Your vest looks stupid" 100 101 110'

@@ -18,7 +18,7 @@ function leg(c, a) {
 
 const Test = require("@codewars/test-compat");
 
-describe("Tests", () => {
+describe("All Star Code Challenge #24", () => {
   it("test", () => {
     Test.assertEquals(hypotenuse(3, 4), 5);
     Test.assertEquals(leg(5, 3), 4);
