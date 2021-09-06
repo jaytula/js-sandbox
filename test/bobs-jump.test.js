@@ -5,11 +5,15 @@
  */
 function countWays(n, k) {
   if (k > n) return countWays(n, n);
-  if (k === 1 || k === 0) return 1;
 
-  return Array.from({ length: k }, (_, idx) =>
-    countWays(n - 1 - idx, k)
-  ).reduce((acc, curr) => acc + curr, 0);
+  let memory = [1, 1];
+  for (let i = 2; i <= n; i++) {
+    const nextNumber = memory
+      .slice(Math.max(0, i - k), i)
+      .reduce((acc, curr) => acc + curr, 0);
+    memory.push(nextNumber);
+  }
+  return memory.pop();
 }
 
 const chai = require("chai");
