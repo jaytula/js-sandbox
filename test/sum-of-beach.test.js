@@ -3,8 +3,8 @@
  * @param {string} beach
  */
 function sumOfABeach(beach) {
-  const match = beach.toLowerCase().matchAll(/(sand|water|fish|sun)/g);
-  return [...match].length;
+  const match = beach.toLowerCase().match(/(sand|water|fish|sun)/g);
+  return match ? match.length: 0;
 }
 
 const { assert } = require("chai");
